@@ -1,0 +1,45 @@
+/* profile/components/ContactDetails.css */
+.contact-details {
+  margin-top: -500px; /* Creates overlap with .showcase-banner */
+  background-image: url(./../../Assets/image2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: #000;
+  height: 150vh;
+  padding-left: 200px;
+  z-index: 1; /* Higher than .showcase-banner to overlap it */
+  position: relative;
+}
+  
+  .contact-details h2 {
+    margin-top: 500px;
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-left: 100px;
+  }
+
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+.contact-item {
+  font-size: 16px;
+}
+
+.contact-item .par{
+  color: #000 !important;
+  
+  
+}

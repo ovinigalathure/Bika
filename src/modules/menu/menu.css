@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+    background-color: #fff;
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 1550px; /* Ensure container takes full width */
+  }

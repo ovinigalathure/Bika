@@ -1,0 +1,161 @@
+.menu-details-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    background-image: url('../../assets/friedRiceBack.jpg'); /* Change the background image path as needed */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 190%;
+    overflow-y: auto;
+  }
+  
+  .menu-details-title {
+    font-size: 36px;
+    color: #ffd700; /* Golden color for the title */
+    margin: 50px 0 20px 0;
+  }
+  
+  .menu-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 40px; /* Space between cards */
+    max-width: 1200px;
+    width: 100%; /* Ensures the container fills the available width */
+    padding-bottom: 50px; /* Space at the bottom */
+    justify-items: center; /* Center items in the grid */
+    
+  }
+  
+  .menu-item-card {
+    background-color: #ffd700; /* Golden background for menu cards */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 250px;
+    display: flex; /* Enable flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content horizontally */
+  }
+  
+  .menu-item-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images are cropped properly */
+  }
+  
+  .menu-item-title {
+    font-size: 20px;
+    color: #000;
+    margin: 15px 0 10px 0;
+  }
+  
+  .menu-item-price {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item-discount {
+    font-size: 16px;
+    color: red; /* Discount in red */
+    margin-bottom: 10px;
+  }
+  
+  .menu-item-customize {
+    margin: 10px 0;
+  }
+  
+  .customize-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .customize-quantity input {
+    width: 50px;
+  }
+  
+  
+  .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .quantity-controls button {
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #e5c700;
+  }
+  
+  .quantity-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .menu-item-date {
+    font-size: 14px;
+    color: #000000; /* White for date text */
+    margin-top: 10px;
+  }
+  
+  /* Styling for Add to Cart and Buy Now buttons */
+  .menu-item-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffd700; /* Golden text */
+    border: 1px solid #ffd700;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .add-to-cart-btn:hover{
+    background-color: #505050; /* Golden background */
+    color: #ffffff; /* Dark text */
+    border: none;
+  }
+  .buy-now-btn{
+    background-color: #d80b0b; /* Dark background */
+    color: #ffffff; /* Golden text */
+    border: 1px solid #ffd700;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 103px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+
+  .buy-now-btn:hover {
+    background-color: #fa5353; /* Golden background */
+    color: #ffffff; /* Dark text */
+    border: none;
+  }
+
+  

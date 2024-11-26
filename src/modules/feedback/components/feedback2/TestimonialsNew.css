@@ -1,0 +1,158 @@
+.comments-new {
+  background-color: #FFCC01; /* Light background for contrast */
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.comments-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.comment-card {
+  background: linear-gradient(145deg, #333, #444); /* Dark gradient for the cards */
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 20px 0;
+  width: 350px;
+  text-align: left;
+  flex: 0 1 22%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: slideUp 1s ease-in-out forwards;
+  animation-delay: calc(0.1s * var(--animation-order));
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.comment-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 8px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  border-color: rgba(255, 255, 255, 0.4); /* Lighten border on hover */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light border for separation */
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid #555; /* Dark border around profile picture */
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.comment-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  color: #fff; /* White text for user name */
+}
+
+.user-email {
+  font-size: 14px;
+  color: #fff; /* White for email */
+  margin-top: 5px;
+}
+
+.comment-body {
+  margin-top: 15px;
+  color: white;
+}
+
+.comment-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff; /* White for the comment text */
+}
+
+.user-address {
+  font-size: 14px;
+  color: #fff; /* White for address */
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 15px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  margin: 0 5px;
+  display: inline-block;
+  animation: dotBlink 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes dotBlink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.comment-card:nth-child(1) {
+  --animation-order: 1;
+}
+.comment-card:nth-child(2) {
+  --animation-order: 2;
+}
+.comment-card:nth-child(3) {
+  --animation-order: 3;
+}
+.comment-card:nth-child(4) {
+  --animation-order: 4;
+}

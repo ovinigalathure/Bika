@@ -1,0 +1,19 @@
+.opening-hours {
+  flex: 1;
+  margin-bottom: 300px; /* Adjust if needed */
+}
+
+.opening-hours h3 {
+  font-size: 25px; /* Smaller text size */
+  color: #ffcc00;
+  margin-top: 190px;
+  margin-left: 30px;
+}
+
+.opening-hours p {
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 15px; /* Smaller text size */
+  color: white;
+  margin-left: 50px;
+}

@@ -1,0 +1,38 @@
+.location-info {
+  flex: 1;
+  margin-top: 170px;
+  margin-left: 200px;
+}
+
+.location-info h3 {
+  color: #ffcc00;
+  font-size: 25px; /* Smaller text size */
+  margin-bottom: 11px;
+  margin-left: 50px;
+
+}
+
+.location-info p {
+  margin-top: 70px;
+  font-size: 18px; /* Smaller text size */
+  color: white;
+  margin-left: 70px;
+  margin-top: 33px;
+}
+
+.get-direction {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px; /* Smaller text size */
+  margin-left: 70px;
+}
+
+.footer-bottom {
+  margin-top: 170px !important;
+  margin-right: 200px;
+}
+
+.footer-bottom p {
+  font-size: 8px; /* Smaller text size */
+}

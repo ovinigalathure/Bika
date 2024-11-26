@@ -1,0 +1,13 @@
+.menu-button button {
+    background-color: #FFD700;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-button button:hover {
+    background-color: #FFA500;
+}

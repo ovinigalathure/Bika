@@ -1,0 +1,10 @@
+.notification-header {
+    background-color: #f8f8f4;
+    text-align: center;
+    padding: 10px;
+    color: black !important;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+  }
+  

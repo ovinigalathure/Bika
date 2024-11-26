@@ -1,0 +1,254 @@
+.order-now-container {
+  width: 1000px;
+  height: 600px;
+  margin-left: 270px;
+  padding: 20px;
+  border: 10px solid #d89f1e;
+  background-color: #fff;
+  overflow-y: auto;
+  box-shadow: 0 20px 30px rgba(5, 6, 4, 0.5); 
+}
+
+.order-now-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #D6A100;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-now-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.order-now-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.order-now-back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.order-now-back-button:hover {
+  color: #ff7b00;
+}
+
+.order-now-menu-button,
+.order-now-user-button,
+.order-now-cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 15px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+
+.order-now-menu-button,
+.order-now-user-button,
+.order-now-cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 25px;
+  padding: 0;
+  color: #000;
+}
+
+.order-now-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.order-now-table {
+  display: table;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.order-now-header-row,
+.order-now-row {
+  display: table-row;
+  font-size: 1.2rem;
+}
+
+.order-now-header-row span,
+.order-now-row span {
+  display: table-cell;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.order-now-header-row span {
+  font-weight: bold;
+}
+
+.order-now-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-now-quantity button {
+  padding: 8px 15px; /* Increased size */
+  margin: 0 5px;
+  background-color: #034f06; /* Changed color */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.order-now-quantity button:hover {
+  background-color: #66bb6a; /* Hover color */
+}
+
+.order-now-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.order-now-submit {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px; /* Increased size */
+  background-color: #2196F3; /* Changed color */
+  border: none;
+  color: #fff; /* Changed text color */
+  font-size: 1.2rem; /* Increased font size */
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.order-now-submit:hover {
+  background-color: #1e88e5; /* Hover color */
+}
+
+.order-now-delete-button {
+  background-color: #8d0d0d; /* Changed color */
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Increased size */
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.order-now-delete-button:hover {
+  background-color: #ff3333; /* Hover color */
+}
+
+
+.order-now-delivery-option{
+  color: #000;
+}
+
+
+.order-now-important-message {
+  background-color: #ffefef;
+  color: #d9534f;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Phone and Delivery Option Styling */
+.order-now-user-info {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Delivery Option Dropdown */
+.order-now-delivery-option {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.order-now-delivery-option label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+#deliveryOption {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #d89f1e;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  transition: border-color 0.3s ease;
+}
+
+#deliveryOption:focus {
+  outline: none;
+  border-color: #2196F3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
+}
+
+/* Delivery Address Input Field */
+.order-now-address {
+  margin-top: 15px;
+}
+
+.order-now-address label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+#address {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #d89f1e;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+#address:focus {
+  outline: none;
+  border-color: #2196F3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
+}
+
+.order-now-address small {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #555;
+}

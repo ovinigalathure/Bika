@@ -1,0 +1,56 @@
+.location-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    width: 1600px;
+    height: 100vh;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location-text {
+    max-width: 40%;
+  }
+  
+  .location-text h2 {
+    color: orange;
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-left: -450px;
+  }
+  
+  .location-text p {
+    font-size: 1.8em;
+    color: #333;
+    margin-left: -390px;
+
+  }
+  
+  .location-icon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 350px;
+    margin-left: 80px;
+  }
+  
+  .map-section {
+    position: relative;
+    width: 100px;
+    padding-top: 100%; /* This will maintain a 1:1 aspect ratio */
+    border-radius: 10px;
+    margin-top: 900px;
+    margin-right: 800px;
+  }
+  
+  .map-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 650px;
+    border-radius: 10px;
+  }
+  

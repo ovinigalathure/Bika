@@ -1,0 +1,78 @@
+/* General Container Styling */
+.order-history-container {
+  border: 10px solid #ffd700; /* Yellow border */
+  padding: 20px;
+ /* Adjusted width */
+  background-color: white; /* Background color */
+  overflow-y: auto; /* Enable scrolling if needed */
+  width: 1510px;
+}
+.headcon .h{
+  position: fixed;
+  margin-top: -380px;
+}
+.order-history-header h1 {
+  text-align: center;
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Card Grid Layout */
+.order-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+/* Individual Card Styling */
+.order-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Card Content */
+.order-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.order-card p {
+  color: black;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Hover Effects for Cards */
+.order-card:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card animation when it enters the viewport */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.order-card {
+  animation: fadeIn 0.5s ease-in-out;
+}

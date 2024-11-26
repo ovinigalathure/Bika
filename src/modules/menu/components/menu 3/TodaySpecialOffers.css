@@ -1,0 +1,22 @@
+.today-special {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding in the width calculation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -1551px;
+    width: 700px; /* Set the desired width */
+    height: 750px;
+    margin-left: 0;
+    font-size: 30px; /* Set a consistent font size for all text */
+    line-height: 1.2; /* Optional: Adjust line spacing for better readability */
+    text-align: left; /* Align text to the left */
+}
+
+.left-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

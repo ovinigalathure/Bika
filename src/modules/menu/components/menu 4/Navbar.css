@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffe066; /* Light yellow to match the theme */
+  }
+  
+  .navbar-logo {
+    height: 50px;
+    width: auto;
+  }
+  

@@ -1,0 +1,174 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.reviews-container {
+  overflow-x: hidden;
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInReviews 1s ease-in-out; /* Fade-in animation for the entire section */
+}
+
+@keyframes fadeInReviews {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.reviews-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  animation: slideDown 0.8s ease-out; /* Slide-down animation for the title */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInReviewsList 1s ease-in-out; /* Fade-in animation for the list */
+}
+
+@keyframes fadeInReviewsList {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.review-item {
+  overflow-x: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.review-item:hover {
+  transform: translateY(-10px); /* Lift slightly on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Add a soft shadow on hover */
+}
+
+.review-item.left {
+  justify-content: flex-start;
+  margin-right: 150px;
+  animation: slideInLeft 0.8s ease-in-out; /* Slide-in from left for left-aligned reviews */
+}
+
+.review-item.right {
+  justify-content: flex-end;
+  margin-left: 150px;
+  animation: slideInRight 0.8s ease-in-out; /* Slide-in from right for right-aligned reviews */
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.review-image {
+  flex: 0 0 auto;
+  margin-right: 150px;
+  animation: fadeInImage 1s ease-in-out; /* Fade-in animation for images */
+}
+
+.review-item.right .review-image {
+  order: 50; /* Move the image to the right side */
+  margin-right: 0;
+  margin-left: 150px;
+  animation: fadeInImage 1s ease-in-out; /* Fade-in animation for images */
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.review-image-item {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.review-image-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.review-text {
+  flex: 1;
+  text-align: left;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  animation: fadeInText 0.8s ease-in-out forwards; /* Fade-in animation for text */
+  animation-delay: 0.3s; /* Delay the text fade-in for a better effect */
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.review-text p {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}

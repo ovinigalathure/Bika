@@ -1,0 +1,148 @@
+.user-profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 900px;
+  height: 600px;
+  background-color: #ffffff;
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  box-shadow: 0 20px 30px rgba(5, 6, 4, 0.5); 
+  margin-left: 300px;
+}
+
+.user-profile-left {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFCC01;
+  color: black;
+  width: 200px;
+}
+
+.user-profile-picture-container {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.user-profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 2px solid #ccc;
+  margin-top: 80px;
+}
+
+.user-profile-picture-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 30px; /* Adjust size as necessary */
+  color: #fff; /* Icon color */
+  background-color: rgba(0, 0, 0, 0.6); /* Background color for better visibility */
+  border-radius: 50%; /* Circular background */
+  padding: 5px; /* Padding around icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-profile-picture-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}
+
+.user-profile-right {
+  flex: 2;
+  padding: 0 20px;
+  color: black; /* Set text color to black for the right side */
+}
+
+.user-profile-right h2,
+.user-profile-right label {
+  color: black; /* Ensuring specific text elements are also black */
+}
+
+.user-profile-right input {
+  width: 100%; /* Set width to 100% for better layout */
+  color: white; /* Inner text color */
+  background-color: #333; /* Background color of input field for contrast */
+  border: 1px solid #ccc; /* Optional border styling */
+  border-radius: 4px; /* Rounded corners for inputs */
+  padding: 8px; /* Padding for better spacing */
+}
+
+.user-profile-details {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Stack fields vertically */
+}
+
+.user-profile-field {
+  margin-bottom: 15px;
+}
+
+.user-profile-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 200px;
+  width: 200px;
+}
+
+.user-profile-edit-button,
+.user-profile-save-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5c5b51; 
+  color: white;
+  margin-right: 20px; 
+}
+
+.user-profile-save-button {
+  background-color: #28a745; 
+}
+
+/* Popup container */
+.popup-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50; /* Success green color */
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 0; /* Initially hidden */
+  animation: showPopup 0.5s forwards, hidePopup 3s 2.5s forwards; /* Show for 2.5 seconds */
+}
+
+/* Keyframe for showing popup */
+@keyframes showPopup {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframe for hiding popup */
+@keyframes hidePopup {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+

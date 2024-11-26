@@ -1,0 +1,79 @@
+.footer {
+  background-color: #2c2c2c;
+  padding: 20px 40px;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  width: 1530px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1500px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffbb00;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.get-direction-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.get-direction-button:hover {
+  background-color: #bdbdbd;
+}
+
+.social-icons1 {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px; /* Adds spacing between the icons */
+}
+
+.social-icons1 i {
+  font-size: 24px; /* Increased size for better visibility */
+  color: #ffffff;
+  padding: 10px; /* Adds padding around the icons */
+  background-color: #333; /* Adds a background color for the icons */
+  border-radius: 50%; /* Makes the icons circular */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+}
+
+.social-icons1 i:hover {
+  background-color: #ffbb00; /* Changes background color on hover */
+  color: #2c2c2c; /* Changes icon color on hover */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+}

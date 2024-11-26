@@ -1,0 +1,101 @@
+.best-sellers {
+  text-align: center;
+  background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.best-sellers-title {
+  font-size: 3rem; /* Increase title font size */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ff7300; /* Set title color to white */
+  transition: color 0.3s;
+  margin-left: -50PX;
+}
+
+/* .best-sellers-title:hover {
+  color: #803c01; 
+} */
+
+.best-sellers-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best-seller-item {
+  position: relative;
+  margin: 20px 0;
+  max-width: 100%;
+  overflow: hidden; /* Hide overflow for animations */
+  transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.best-seller-item:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.best-seller-image {
+  width: 1600px;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 50vh; /* Ensure it does not exceed 50vh */
+  border-radius: 15px;
+  object-fit: cover; /* Maintain the aspect ratio while covering */
+}
+
+.best-seller-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text */
+  color: #fff; /* Set all overlay text to white */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Fade effect */
+}
+
+.best-seller-item:hover .best-seller-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.product-name {
+  font-size: 2rem; /* Increase font size for product name */
+  margin: 10px 0;
+  color: #fff; /* Set product name color to white */
+}
+
+.product-price{
+  color: #ffffff;
+}
+
+.product-discount,
+.product-description {
+  font-size: 1.5rem; /* Increase font size for price, discount, and description */
+  margin: 5px 0;
+  color: #fff; /* Set color to white */
+}
+
+.best-seller-button-image {
+  position: absolute;
+  bottom: 20px; /* Adjust based on your design */
+  left: 50%;
+  transform: translateX(-50%); /* Center the button */
+  width: 120px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 2;
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: transform 0.3s; /* Animation for button */
+  margin-left: 200px;
+}
+
+.best-seller-button-image:hover {
+  transform: scale(1.1); /* Scale button on hover */
+}

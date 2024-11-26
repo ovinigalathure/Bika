@@ -1,0 +1,171 @@
+.dinein-delivery-section {
+  text-align: center;
+  margin: 0;
+  height: 90vh; /* Set section height */
+  width: 100%; /* Ensure the section takes up full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation for the whole section */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.dinein-title {
+  font-size: 3rem; /* Maintain large font size */
+  color: orange;
+  margin-bottom: -80px;
+  margin-top: 50px;
+  text-align: left; /* Align title to the left */
+  width: 30%; /* Set the width to force text wrapping */
+  line-height: 1.2; /* Adjust line height for better readability */
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  margin-right: 700px; /* Ensure there's no left margin pushing it right */
+  animation: slideInLeft 1.2s ease-out; /* Slide-in from the left animation */
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.dinein-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Fill available height */
+  position: relative; /* Position relative to position the delivery person */
+}
+
+.search-menu {
+  padding: 15px;
+  font-size: 1.2rem;
+  width: 400px; /* Increase width */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  align-self: flex-start; /* Align the search menu to the left */
+  margin-left: 150px; /* Add a left margin to move it slightly away from the edge */
+  margin-bottom: 50px;
+  transition: box-shadow 0.3s ease; /* Smooth shadow effect */
+}
+
+.search-menu:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect when focused */
+}
+
+.dinein-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -100px; /* Add spacing below icons */
+  margin-left: -970px;
+  gap: 70px;
+  animation: iconsBounce 1.5s ease-in-out infinite; /* Bouncing animation for icons */
+}
+
+@keyframes iconsBounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.icon img {
+  width: 100px; /* Set icon size */
+  height: 100px;
+  margin: 0 20px; /* Add spacing between icons */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.icon img:hover {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.delivery-image {
+  position: absolute; /* Position delivery image absolutely */
+  right: 20px; /* Align to the right */
+  bottom: 20px; /* Align to the bottom */
+  animation: floatDelivery 3s ease-in-out infinite; /* Floating animation for delivery image */
+}
+
+@keyframes floatDelivery {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+}
+
+.delivery-image img {
+  width: 600px; /* Resize the delivery person image */
+  height: 600px; /* Maintain aspect ratio */
+  padding: 0px;
+  margin-right: 120px;
+  bottom: -500px;
+  transition: transform 0.4s ease; /* Smooth transform on hover */
+}
+
+.delivery-image img:hover {
+  transform: scale(1.05); /* Slight enlargement on hover for a subtle effect */
+}
+
+.dine-dropdown {
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  position: absolute;
+  width: 25%;
+  z-index: 1000;
+  margin-top: 220px;
+  margin-right: 850px;
+  animation: dropdownFadeIn 0.8s ease-in-out; /* Fade-in animation for dropdown */
+}
+
+@keyframes dropdownFadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.dine-dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #000;
+  transition: background-color 0.2s ease;
+}
+
+.dine-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dine-dropdown-no-items {
+  padding: 10px;
+  color: #999;
+}

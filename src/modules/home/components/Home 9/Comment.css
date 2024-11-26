@@ -1,0 +1,127 @@
+.Comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  width: 1600px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.Comment-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+
+.human {
+  width: 900px;
+  height: 800px;
+  margin-right: 20px;
+  margin-left: -70px;
+  margin-top: 180px;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.Comment-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+.bubble {
+  width: 450px;
+  height: auto;
+  margin-right: 580px;
+  margin-left: -590px;
+  margin-top: -210px;
+  transform: rotate(25deg);
+  animation: bubblePop 1.2s ease-in-out;
+}
+
+.Comment-text p {
+  font-size: 2.5em;
+  color: #ffcc00;
+  width: 400px;
+  line-height: 1.2;
+  margin-right: 250px;
+  margin-top: -250px;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0;
+  animation: fadeInText 1.5s ease-in-out forwards;
+  animation-delay: 0.5s; /* Delays text animation slightly */
+}
+
+.Comment-text small {
+  font-size: 0.9em;
+  color: #000000;
+  margin-right: 350px;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeInText 1.8s ease-in-out forwards;
+  animation-delay: 0.8s; /* Delays small text animation slightly */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bubblePop {
+  0% {
+    transform: scale(0) rotate(25deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1) rotate(25deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1) rotate(25deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

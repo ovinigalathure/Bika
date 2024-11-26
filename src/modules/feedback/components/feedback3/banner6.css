@@ -1,0 +1,26 @@
+.banner {
+    background-image: url('../../assets/image8.png'); 
+    background-color: #512424; 
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.banner-logo {
+    font-size: 2em;
+    color: #000;
+    margin-top: 10px;
+}
+
+.banner-dots {
+    font-size: 1.5em;
+    color: #000;
+    margin-top: 15px;
+}

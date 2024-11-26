@@ -1,0 +1,114 @@
+.form-boxl {
+  color: #fff;
+  background-color: #5C482A;
+  border-radius: 30px;
+  padding: 3rem;
+  width: 400px !important;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-left: -100px;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.show-password-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff; /* Change to your desired color */
+  cursor: pointer;
+  font-size: 16px; /* Increase size for better visibility */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+
+.login-button1 {
+  background-color: #FFD700;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+}
+
+.options {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.forgot-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.signup-text {
+  margin-top: 10px;
+}
+
+.social-auth {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.social-iconsl {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-iconl {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.social-iconl img {
+  width: 30px;
+  height: 30px;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

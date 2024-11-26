@@ -1,0 +1,108 @@
+.form-box1 {
+  color: #fff;
+  background-color: #5C482A;
+  border-radius: 30px;
+  padding: 3rem;
+  width: 600px;
+  height: 700px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-left: -260px;
+  margin-top: -50px;
+  overflow-x: hidden;
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.frm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  width: 200px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .form-input {
+  margin-bottom: 0;
+}
+
+.show-password-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: -10px;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.submit-button {
+  background-color: #FFD700;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px;
+  margin-left: 120px;
+  margin-top: 30px;
+}
+
+.social-auth {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.login-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+
+.social-iconss {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.google-icons img,
+.facebook-icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.google-icons {
+  width: 100px;
+}
+
+.facebook-icons {
+  width: 100px;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

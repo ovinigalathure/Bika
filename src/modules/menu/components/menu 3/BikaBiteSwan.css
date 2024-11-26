@@ -1,0 +1,16 @@
+.bika-bite-swan {
+    background-color: yellow;
+    color: black;
+    padding: 20px;
+    width: 700px;
+    height: 750px;
+    margin-bottom: -770px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 950px;
+    font-size: 18px;
+    padding-left: 120px;
+    z-index: 1;
+}

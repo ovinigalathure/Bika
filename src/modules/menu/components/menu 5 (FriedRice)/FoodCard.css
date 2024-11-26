@@ -1,0 +1,33 @@
+.food-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .food-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .food-card h3 {
+    margin: 10px 0;
+  }
+  
+  .food-card p {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  .food-card button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #FFD700;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

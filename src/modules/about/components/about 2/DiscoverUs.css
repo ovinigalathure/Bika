@@ -1,0 +1,55 @@
+.discover-us-section {
+    background-image: url('../../assets/ab2back.jpeg'); /* Use disc-back image as background */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 502px;
+    height: 742px;
+}
+
+.discover-us-content {
+    width: 1200px;
+}
+
+.discover-us-title {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFD700; /* Gold color for the title */
+    margin-top: -40px;
+    margin-left: 250px;
+    font-family: 'Kolker Brush', cursive;
+}
+
+.discover-us-logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.disc-logo {
+    width: 80px;
+    height: auto;
+    margin-left: -500px;
+    margin-bottom: 430px;
+}
+
+.discover-us-description {
+    font-size: 25px;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+    width: 600px;
+    height: 210px;
+    margin-top: -200px;
+    margin-left: 10px;
+}
+
+
+.disc-back{
+    opacity: 0%;
+}

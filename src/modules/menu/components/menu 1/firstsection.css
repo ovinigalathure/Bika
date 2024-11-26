@@ -1,0 +1,64 @@
+.hero-section {
+    position: relative;
+    height: 90vh; /* Full viewport height */
+    background-color: #ffffff;
+    background-image: url('./../../assets/back.jpg');
+    display: flex;
+    justify-content: space-between; /* Space between left and right elements */
+    align-items: center;
+    overflow: hidden;
+    padding: 0 20px; /* Add some padding for spacing */
+}
+
+.food-background {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; /* Push content to the right */
+    align-items: center;
+    flex-grow: 1; /* Allow the background to take available space */
+}
+
+.background-image2 {
+    width: 60vw; /* Adjust size as needed */
+    height: auto;
+    object-fit: cover;
+}
+
+.overlay-content {
+    position: absolute;
+    right: 5%; /* Align content towards the right side */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content within the right side */
+    gap: 20px; /* Adds spacing between title and man images */
+    top: 10%; /* Pushes the overlay content a bit more towards the top */
+}
+
+.title-image2 {
+    width: 80%; /* Adjust width */
+    max-width: 550px;
+    margin-bottom: 0; /* Remove unnecessary margin */
+    position: relative;
+    top: -20px; /* Move the title image higher */
+}
+
+.man-image2 {
+    width: 600px;
+    max-width: 1000px;
+    position: relative;
+    left: -50px; /* Adjust the positioning to align below the title */
+    top: -60px; /* Fine-tune to ensure it is placed correctly below the title */
+}
+
+.btn{
+ margin-left: 300px;    
+ margin-top: 300px;
+ color: #000000;
+}
+.btn button{
+    width: 200px;
+    height: 60px;
+    border-radius: 60px;
+}
+

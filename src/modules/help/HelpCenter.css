@@ -1,0 +1,38 @@
+/* profile/helpCenter.css */
+.help-center-container {
+    background-color: #ffdd00;
+    padding: 20px;
+    width: 1540px;
+    height: 100vh;
+  }
+  
+  .help-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .help-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .help-table th, .help-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+    color: white;
+  }
+  
+  .help-table th {
+    background-color: #333;
+  }
+  
+  .help-table tr:nth-child(even) {
+    background-color: #444;
+  }
+  
+  .help-table tr:nth-child(odd) {
+    background-color: #555;
+  }
+  

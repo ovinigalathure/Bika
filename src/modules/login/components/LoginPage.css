@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  width: 1600px;
+  background-color: #FFD700;
+  overflow: hidden;
+}
+
+.login-image {
+  flex: 1;
+}
+
+.image {
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form-container {
+  flex: 1;
+  background-color: #FFD700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-left: 300px;
+  margin-right: 200px;
+}

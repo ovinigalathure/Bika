@@ -1,0 +1,53 @@
+.showcase-banner {
+    position: relative;
+    text-align: center;
+    /* background-image: url('/path-to-your-background-image.png'); */
+    background-size: cover;
+    color: #fdd835;
+    padding: 50px 0;
+  }
+  
+  .showcase-content h1 {
+    font-size: 3.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 250px;
+    margin-left: 100px;
+  }
+  
+  .showcase-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .carousel-indicators {
+    
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .indicator {
+    
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 200px 50px;
+  }
+  .showcase-banner {
+    background-image: url(./../../Assets/image1.png);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex;
+    width: 1550px;
+    height: 111vh;
+    margin-top: -5px;
+    box-sizing: border-box; 
+    z-index: 2; /* Lowest z-index to stay at the back */
+    position: relative;
+  }
+  

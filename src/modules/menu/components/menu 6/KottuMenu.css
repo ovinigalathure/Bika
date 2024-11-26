@@ -1,0 +1,15 @@
+.kottu-container {
+    padding: 20px;
+  }
+  
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .food-card {
+    margin: 15px;
+    width: 250px;
+  }
+  

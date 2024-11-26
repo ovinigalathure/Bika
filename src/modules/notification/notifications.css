@@ -1,0 +1,119 @@
+/* Container Styles */
+.notifications-container {
+  background-color: #ffdd00;
+  padding: 20px;
+  height: 100vh;
+  width: 1540px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.notification-header {
+  background-color: #f8f8f4;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+}
+
+/* Content Section Styles */
+.notifications-content {
+  flex: 1;
+  background-color: #d99800;
+  margin-top: 10px;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between notification boxes */
+}
+
+/* Notification Box Styles */
+.notification-box {
+  background-color: #f9f9f9; /* Light background color */
+  border: 1px solid #ddd; /* Border for box effect */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Internal spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 16px;
+  color: #333;
+  width: 1400px;
+  margin: 0 auto; /* Centered alignment */
+  text-align: left; /* Align text to the left */
+  display: flex; /* Flex properties */
+  flex-direction: column; /* Vertical stacking */
+  justify-content: flex-start; /* Align items to the top */
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+}
+
+/* Notification Box Variants */
+.notification-box.notification-read {
+  opacity: 0.6; /* Reduced opacity for read notifications */
+}
+
+.notification-box.notification-unread {
+  font-weight: bold; /* Bold text for unread notifications */
+  background-color: #f9f9f9;
+}
+
+/* Paragraph Styling */
+.notification-box p {
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+/* Space between paragraphs */
+.notification-box p + p {
+  margin-top: 10px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-buttons button:hover {
+  background-color: #007bff;
+  color: white;
+}
+.notification-box.notification-read {
+  opacity: 0.6;
+}
+
+.notification-box.notification-unread {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+.delete-selected-button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-selected-button:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,36 @@
+/* 
+  html, body{
+    margin: 0;
+    height: 10px;
+    margin-bottom: 100px;
+  }
+   */
+  /* .About-container {
+    margin-top: -380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1530px; /* Ensure container takes full width */
+  /* } */ 
+  .About-container {
+    position: relative;
+    background-image: url('./assets/ab2back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .About-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
+    z-index: 1;
+  }
+  
+  .About-container > * {
+    position: relative;
+    z-index: 2;
+  }

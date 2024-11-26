@@ -1,0 +1,94 @@
+.head {
+    margin-top: -32px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff; /* Ensure the header background is solid */
+}
+
+.shopping-cart-container {
+    text-align: center;
+    border: 5px solid #D6A100;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #fff;
+    width: 1000px;
+    height: 600px;
+    margin-left: 280px;
+    overflow-y: scroll;
+    box-shadow: 0 20px 30px rgba(5, 6, 4, 0.5);
+}
+
+.shopping-cart-title {
+    font-size: 36px;
+    margin-top: 20px;
+    font-family: 'Serif';
+    color: #000;
+}
+
+.cart-table-container {
+    max-height: 400px; /* Set a fixed height for the table container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px;
+    border: 1px solid #D6A100;
+    
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.cart-table th {
+    position: sticky; /* Sticky header */
+    top: 0; /* Stay at the top of the scrollable area */
+    background-color: #D6A100; /* Header background color */
+    color: #fff;
+    z-index: 2; /* Ensure the header stays above the table body */
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    border: 1px solid #D6A100;
+    text-align: center;
+}
+
+.quantity-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-button:hover {
+    background-color: #555;
+}
+
+.checkout-button {
+    margin-top: 30px;
+    background-color: #F6C3C3;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.menu-message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+.back-buttonC{
+    border:2px solid #D6A100;
+}
+.back-buttonC:hover{
+    border: 2px solid red;
+}

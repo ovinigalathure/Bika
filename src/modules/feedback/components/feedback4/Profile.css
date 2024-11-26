@@ -1,0 +1,98 @@
+/* /profile/profile.css */
+.profile-containerf {
+  width: 100% ;
+  margin: auto ;
+  text-align: center;
+  height: 100vh;
+  background-color: #d2b025 ;
+  margin-top: -50px;
+
+}
+
+.profile-title {
+  margin-bottom: 100px !important;
+  font-size: 3.5em !important;
+  margin-top:50px !important;
+  margin-right: 100px;
+  color: rgb(0, 0, 0) !important;
+}
+
+.faq-list {
+  text-align: left !important;
+  list-style-type: none;
+  padding: 20px; /* Adjusted padding for better spacing */
+  color: rgb(0, 0, 0);
+  margin-left: 50px;
+  background-color: #dfab26;
+  width: 100%; /* Adjusted width to resize the list */
+  margin: auto; /* Center the list within its container */
+}
+
+.faq-list li {
+  margin-bottom: 30px; /* Reduced margin for better spacing between items */
+}
+
+.contact-form {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 100px !important;
+  margin-left: 150px!important;
+  background-color: #5c5c5c !important;
+  width: 600px !important;
+  height: 50vh;
+  padding: 50px !important;
+  box-shadow: 0 0 8px 4px rgb(255, 166, 0) !important;
+  border-radius: 20px !important;
+}
+
+.form-input, .form-textarea {
+  margin-bottom: 10px !important;
+  padding: 10px !important;
+  font-size: 1em !important;
+}
+
+.form-textarea {
+  height: 250px !important;
+}
+
+.form-input {
+  width: 500px !important;
+  margin-bottom: 20px !important;
+}
+
+.form-button {
+  padding: 10px !important;
+  background-color: rgb(255, 166, 0) !important;
+  color: white !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.form-button:hover {
+  background-color: #b58d53 !important;
+}
+.success-message-box {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #4caf50; /* Green border */
+  background-color: #e8f5e9; /* Light green background */
+  color: #2e7d32; /* Darker green text */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.question-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.question-image {
+  width: 500px;
+  height: 500px; 
+  border-radius: 8px; 
+  margin-left: 700px;
+  margin-top: -450px;
+}

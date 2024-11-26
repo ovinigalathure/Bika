@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.contact-card-container {
+  position: relative;
+  color: #fff;
+  height: 100vh;
+  width: 1600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-header {
+  text-align: left; /* Align header text to the left */
+  padding-left: 100px; /* Adjust padding to move content to the right */
+  margin-right: 10%; /* Reduce the right margin if necessary */
+}
+
+
+.contact-header h2 {
+  font-size: 5em;
+  margin-bottom: 10px; /* Adjust as needed */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start; /* Align social icons to the left */
+  gap: 10px;
+  padding-left: 150px; /* Add padding to the left for spacing */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.social-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.contact-details {
+  text-align: left; /* Align contact details text to the left */
+  padding-left: 70px; /* Add padding to the left for spacing */
+  font-size: 1.5em;
+  margin: 20px 0; /* Adjust margins as needed */
+}
+
+.contact-details p:first-of-type {
+  color: yellow;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.8em;
+  margin: 10px 20; /* Adjust top and bottom margins */
+}
+
+.contact-details .phone-number {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  margin-left: 188px; /* Add margin to the left to move the contact number slightly to the right */
+}
+
+.person-image {
+  position: absolute;
+  bottom: -36px;
+  right: -60px;
+}
+
+.person-image img {
+  width: 800px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.brand-label-img {
+  position: absolute;
+  top: 0px;
+  right: 200px;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.2em;
+  height: 300px;
+  width: 300px;
+}
